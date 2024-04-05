@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Torneio do Poder</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+
+        <h1>Cadastro de Lutador!!!</h1>
+        
+        <form action="#" 
+        	method="post" 
+        	th:action="@{/cadastro}"
+        	th:object="${lutador}">
+			
+			<input placeholder="Nome do Lutador" 
+				   	id="nome"
+					th:field ="*{nome}" />
+			<br>
+			<br>		
+			<input placeholder="Ki do Lutador" 
+				   	id="ki"
+				   	type="number"
+					th:field ="*{ki}" />
+			<br>
+			<br>		
+			<input placeholder="Estamina do Lutador" 
+				   	id="estamina"
+				   	type="number"
+					th:field ="*{estamina}" />
+			<br>
+			<br>
+			<input placeholder="Peso do Lutador" 
+				   	id="peso"
+					th:field ="*{peso}" />
+					 
+			<br>
+			<br>
+			<input type="submit" value="Salvar"/>
+			
+		</form>
+         
+    </body>
+</html>

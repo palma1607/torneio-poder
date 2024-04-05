@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Torneio do Poder</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+
+        <h1>Bem-vindo ao torneio do Poder!!!</h1>
+        
+        <h3>Lutadores confirmados:</h3>
+        
+        <tr th:each=" lutador : ${lutadores}">
+			<span th:text="${lutador.nome}"></span>
+			<span th:text="${lutador.ki}"></span>
+			<p></p>
+		</tr>
+        
+    </body>
+</html>
