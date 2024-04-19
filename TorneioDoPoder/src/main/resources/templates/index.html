@@ -12,9 +12,13 @@
         <h3>Lutadores confirmados:</h3>
         
         <tr th:each=" lutador : ${lutadores}">
-			<span th:text="${lutador.nome}"></span>
-			<span th:text="${lutador.ki}"></span>
-			<p></p>
+			
+			<a href="https://www.google.com">
+				<span th:text="${lutador.nome}"></span>
+				<span th:text="${lutador.ki}"></span>
+				<p></p>
+			</a>
+			
 		</tr>
         
     </body>
