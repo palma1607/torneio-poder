@@ -10,7 +10,7 @@
         <h1>Atualização do Lutador!!!</h1>
         
         <form action="#" 
-        	method="put" 
+        	method="post" 
         	th:action="@{/atualizar/{id}(id=${lutador.id})}"
         	th:object="${lutador}">
 			
@@ -38,8 +38,17 @@
 			<br>
 			<br>
 			<input type="submit" value="Salvar"/>
-			
+			<input type="hidden" name="_method" value="PUT"/>
 		</form>
+         
+        <form action="#" 
+        	method="post" 
+        	th:action="@{/remover/{id}(id=${lutador.id})}"
+        	th:object="${lutador}">
+			<input type="submit" value="Deletar"/>
+			<input type="hidden" name="_method" value="DELETE"/>
+		</form>
+         
          
     </body>
 </html>

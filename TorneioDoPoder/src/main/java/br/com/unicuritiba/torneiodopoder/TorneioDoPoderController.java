@@ -60,7 +60,6 @@ public class TorneioDoPoderController {
 		return "redirect:/";
 	}
 	
-	
 	@DeleteMapping("/remover/{id}")
 	public String removeFighter(
 			@PathVariable("id") long id) {

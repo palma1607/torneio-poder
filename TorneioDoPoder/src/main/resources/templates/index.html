@@ -13,13 +13,17 @@
         
         <tr th:each=" lutador : ${lutadores}">
 			
-			<a href="https://www.google.com">
+			<a th:href="@{/atualizar/{id}(id=${lutador.id})}">
 				<span th:text="${lutador.nome}"></span>
 				<span th:text="${lutador.ki}"></span>
 				<p></p>
 			</a>
 			
 		</tr>
-        
+
+		<a href="/cadastro">
+			<button>Cadastrar Lutador</button>
+		</a>
+
     </body>
 </html>
